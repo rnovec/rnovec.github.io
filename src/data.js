@@ -2,8 +2,7 @@ module.exports = {
   profile: {
     name: 'Raúl Novelo',
     title: 'Software Developer',
-    photo:
-      'https://media-exp1.licdn.com/dms/image/C4D03AQGU93oR-YYgIQ/profile-displayphoto-shrink_200_200/0?e=1609977600&v=beta&t=SuUjNx9AAY3TQHtxqfKJF9IsESZmmTX35VhO96GKlI4', // 300x300px
+    photo: 'photo.jpg', // 300x300px
     city: 'MID, Yucatán, México',
     phone: '(+52) 999-9090-601',
     mail: 'raul.novelo@aaaimx.org'
@@ -33,11 +32,12 @@ module.exports = {
       title: 'President & Software Division Leader',
       period: 'APR 2019 - PRESENT',
       jobdesc: [
-        'Oficial Website, Research catalog and Productivity Admin development.',
-        'AAAIMX API RESTful development with Django REST Framework.',
-        'Migrating from monolithic architecture to microservices.',
-        'Divisions websites with Vuepress.',
-        'Working on AI projects and other popular related fields.'
+        'Founder and mentor of Student Chapter members',
+        'Project leader and FrontEnd developer',
+        'Design and maintenance oficial website and admin',
+        'Implementing microservices and REST architecture',
+        'Speaker, teacher and advisor in projects for DSC',
+        'Co-author in technical articles and publications'
       ]
     },
     {
@@ -46,17 +46,16 @@ module.exports = {
       title: 'Python Developer',
       period: 'JAN 2019 - JUL 2019',
       jobdesc: [
-        'Frontend development with Django templates and HTML/JS/CSS.',
-        'Backend architecture using Django, NGINX, Celery & RabbitMQ.',
-        'Maintenance, email service and dashboard.'
+        'Development of Boat Rental plataform with Django REST Framework, PostgreSQL, NGINX, Celery and RabbitMQ',
+        'Maintenance, email service and admin dashboard'
       ]
     },
     {
       company: 'ADC',
       location: 'Mérida, MX',
-      title: 'Frontend Teacher',
+      title: 'Voluntary',
       period: 'JAN 2018 - APR 2020',
-      jobdesc: []
+      jobdesc: ['FrontEnd coach (Vue.js/Vuex ']
     }
   ],
   educations: [
@@ -64,7 +63,7 @@ module.exports = {
       name: 'Instituto Tecnológico de Mérida',
       city: 'TecNM',
       degree: 'Bachelor Degree',
-      period: '2017 - PRESENT',
+      period: 'AUG 2017 - PRESENT',
       faculty: 'Computer Systems Engineering'
     },
     {
