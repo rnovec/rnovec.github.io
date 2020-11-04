@@ -1,0 +1,105 @@
+$theme: #2b5458;
+$grey: #b5b5b5;
+
+@import "~bulma/bulma";
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.line {
+  height: 0px;
+}
+
+.hr {
+  border-bottom: 10px solid $theme;
+  margin: 0 1rem;
+}
+
+.section {
+  padding: 0.5rem !important;
+}
+
+.summary,
+.experience,
+.education,
+.projects,
+.skills,
+.awards,
+.languages {
+  margin-bottom: 1rem;
+
+  .title {
+    padding: 0.5em 0;
+    border-bottom: 0.5px solid $theme;
+  }
+}
+
+.experience,
+.education,
+.projects,
+.skills,
+.awards {
+  .item {
+    padding: 0em;
+  }
+}
+
+.profile {
+  .image {
+    margin: 0 auto;
+  }
+  svg {
+    fill: $grey;
+  }
+}
+
+.social-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+  i {
+    color: #b5b5b5;
+    font-size: 24px;
+    width: 2rem;
+  }
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.footer {
+  padding: 1rem;
+}
+
+/* Query for mobile only*/
+@media screen and (max-width: 768px) {
+  .profile {
+    text-align: center;
+  }
+  .social-icon {
+    justify-content: center;
+  }
+}
+
+/* Query for desktop only*/
+@media screen and (min-width: 1023px) {
+  .has-text-right-in-desktop {
+    text-align: right;
+  }
+}
+footer.has-background-primary,
+header.has-background-primary {
+  background-color: $theme !important;
+}
+
+.has-text-primary {
+  color: $theme !important;
+}
