@@ -3,7 +3,9 @@ function Footer (props) {
     <div>
       <footer className='footer'>
         <div className='content has-text-centered'>
-          {/* <a href='light.html'>Download CV</a> */}
+          <a href="Raul Novelo CV.pdf" download>
+            Download CV
+          </a>
           <br />
           Copyright © {new Date().getFullYear()} by {props.name}
         </div>

@@ -134,6 +134,12 @@ module.exports = {
       period: 'AUG 2020'
     },
     {
+      title: 'Currency Converter (React Native)',
+      link: 'https://github.com/rnovec/currency-converter-v2',
+      company: 'Personal',
+      period: 'NOV 2020'
+    },
+    {
       title: 'Digital Window',
       link: 'https://github.com/wolfcodesquad/digital-window',
       company: 'Servicios Escolares ITM',
@@ -142,7 +148,11 @@ module.exports = {
   ],
   skills: [
     {
-      name: 'HTML/JS/CSS',
+      name: 'HTML5/CSS3',
+      progress: 90
+    },
+     {
+      name: 'Javascript',
       progress: 90
     },
     {
@@ -151,6 +161,14 @@ module.exports = {
     },
     {
       name: 'React.js / Redux',
+      progress: 90
+    },
+    {
+      name: 'React Native',
+      progress: 90
+    },
+    {
+      name: 'Electron',
       progress: 90
     },
     {
@@ -166,7 +184,15 @@ module.exports = {
       progress: 90
     },
     {
+      name: 'Django REST Framework',
+      progress: 90
+    },
+    {
       name: 'Git/Github',
+      progress: 85
+    },
+    {
+      name: 'Gitflow',
       progress: 85
     },
     {
@@ -180,6 +206,14 @@ module.exports = {
     {
       name: 'AWS',
       progress: 50
+    },
+    {
+      name: 'PostgreSQL',
+      progress: 90
+    },
+    {
+      name: 'MySQL',
+      progress: 90
     },
     {
       name: 'Technical Consulting',

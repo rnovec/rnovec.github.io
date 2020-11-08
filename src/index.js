@@ -1,17 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Profile from './components/Profile'
-import {
-  Experience,
-  Education,
-  Research,
-  Projects,
-  Skills,
-  Langs
-} from './components/Lists'
 import Footer from './components/Footer'
 import './dark-theme.scss'
 import data from './data'
+
+const styles = {
+  list: {
+    listStyle: 'disc',
+    marginLeft: '1em'
+  },
+  projItem: {
+    paddingTop: 0.5
+  }
+}
 
 const el = (
   <div>
@@ -28,14 +30,16 @@ const el = (
               </div>
               <div className='wrapper'>
                 Experienced Fullstack Developer with more than 2 years of broad
-                experience in the areas of Backend, Frontend, Cloud and DevOps.
-                Having deep knowledge in Web Development with frameworks as
-                Vue.js, Node.js and Django. Also, I am community leader,
-                open-source collaborator, and author for technical articles.
+                experience in the areas of <b>Backend</b>, <b>Frontend</b>,{' '}
+                <b>Cloud</b> and <b>DevOps</b>. Having deep knowledge in Web
+                Development with frameworks as <b>Vue.js</b>, <b>Node.js</b> and{' '}
+                <b>Django</b>. Also, I am community leader, open-source
+                collaborator, and author for technical articles.
                 <br />
-                <br />✔ Among the strengths I have developed are my excellent
-                communication skills, teamwork, critical thinking, creativity,
-                and problem-solving.
+                <br />✔ Among the strengths I have developed are my excellent{' '}
+                <b>communication skills</b>, <b>teamwork</b>,{' '}
+                <b>critical thinking</b>, <b>creativity</b>, and{' '}
+                <b>problem-solving</b>.
               </div>
             </div>
 
@@ -43,7 +47,22 @@ const el = (
               <div className='title is-size-5 has-text-primary has-text-weight-bold'>
                 EXPERIENCE
               </div>
-              <Experience experiences={data.experiences} />
+              {data.experiences.map(exp => (
+                <div key={exp.title} className='item'>
+                  <div className='is-size-5'>
+                    <b>{exp.company}, </b>
+                    <span className='has-text-weight-semi-bold'>
+                      {exp.location} — <i>{exp.title}</i>
+                    </span>
+                  </div>
+                  <div className='is-size-7'>{exp.period}</div>
+                  {exp.jobdesc.map(job => (
+                    <ul key={job} style={styles.list}>
+                      <li>{job}</li>
+                    </ul>
+                  ))}
+                </div>
+              ))}
             </div>
 
             <div className='education'>
@@ -51,7 +70,18 @@ const el = (
                 EDUCATION
               </div>
 
-              <Education schools={data.educations} />
+              {data.educations.map(school => (
+                <div key={school.name} className='item'>
+                  <div className='is-size-5'>
+                    <b>{school.name}</b>/
+                    <span className='has-text-weight-semi-bold'>
+                      {school.city} — <i>{school.degree}</i>
+                    </span>
+                  </div>
+                  <div className='is-size-7'>{school.period}</div>
+                  <div>{school.faculty}</div>
+                </div>
+              ))}
             </div>
           </div>
           <div className='column'>
@@ -59,14 +89,39 @@ const el = (
               <div className='title is-size-5 has-text-primary has-text-weight-bold'>
                 RESEARCH
               </div>
-              <Research research={data.research} />
+              {data.research.map(r => (
+                <div className='item'>
+                  <div className='is-size-6'>
+                    <b>{r.title}</b> —
+                    <i>
+                      <a href={r.link}>{r.publisher}</a>
+                    </i>
+                  </div>
+                  <div className='is-size-7'>{r.year}</div>
+                </div>
+              ))}
             </div>
             <div className='projects'>
               <div className='title is-size-5 has-text-primary has-text-weight-bold'>
                 PROJECTS
               </div>
 
-              <Projects projects={data.projects} />
+              {data.projects.map(proj => (
+                <div className='item' style={styles.projItem}>
+                  <div className='is-size-6'>
+                    <b>
+                      {' '}
+                      <a target='_blank' rel='noreferrer' href={proj.link}>
+                        {proj.title}
+                      </a>
+                    </b>
+                  </div>
+                  <div className='is-size-7'>
+                    {' '}
+                    {proj.company}, {proj.period}
+                  </div>
+                </div>
+              ))}
             </div>
 
             <div className='skills'>
@@ -74,14 +129,22 @@ const el = (
                 SKILLS
               </div>
               <div className='wrapper'>
-                <Skills skills={data.skills} />
+                {data.skills.map(skill => (
+                  <span className='tag is-white has-text-weight-bold'>
+                    {skill.name}
+                  </span>
+                ))}
               </div>
             </div>
             <div className='languages'>
               <div className='title is-size-5 has-text-primary has-text-weight-bold'>
                 LANGUAGES
               </div>
-              <Langs languages={data.languages} />
+              {data.languages.map(lang => (
+                <ul key={lang} className='wrapper'>
+                  <li style={styles.list}>{lang}</li>
+                </ul>
+              ))}
             </div>
           </div>
         </div>
