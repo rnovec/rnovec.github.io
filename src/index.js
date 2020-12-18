@@ -12,6 +12,9 @@ const styles = {
   },
   projItem: {
     paddingTop: 0.5
+  },
+  tag: {
+    margin: '0.7%'
   }
 }
 
@@ -130,7 +133,7 @@ const el = (
               </div>
               <div className='wrapper'>
                 {data.skills.map(skill => (
-                  <span className='tag is-white has-text-weight-bold'>
+                  <span style={styles.tag} className='tag is-white has-text-weight-bold'>
                     {skill.name}
                   </span>
                 ))}

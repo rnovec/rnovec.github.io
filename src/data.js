@@ -134,10 +134,10 @@ module.exports = {
       period: 'AUG 2020'
     },
     {
-      title: 'Currency Converter (React Native)',
-      link: 'https://github.com/rnovec/currency-converter-v2',
+      title: 'React Native Apps',
+      link: 'https://expo.io/@rnovec98/projects',
       company: 'Personal',
-      period: 'NOV 2020'
+      period: '2020'
     },
     {
       title: 'Digital Window',
