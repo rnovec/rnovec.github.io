@@ -32,7 +32,7 @@ const el = (
                 SUMMARY
               </div>
               <div className='wrapper'>
-                Experienced Fullstack Developer with more than 2 years of broad
+                Experienced Fullstack Developer with 3+ years of
                 experience in the areas of <b>Backend</b>, <b>Frontend</b>,{' '}
                 <b>Cloud</b> and <b>DevOps</b>. Having deep knowledge in Web
                 Development with frameworks as <b>Vue.js</b>, <b>Node.js</b> and{' '}
@@ -109,7 +109,7 @@ const el = (
                 PROJECTS
               </div>
 
-              {data.projects.map(proj => (
+              {data.projects.reverse().map(proj => (
                 <div className='item' style={styles.projItem}>
                   <div className='is-size-6'>
                     <b>

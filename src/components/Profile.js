@@ -8,7 +8,7 @@ function Profile (props) {
             <p className='subtitle'>{props.profile.title}</p>
           </div>
           <div className='column is-2'>
-            <figure className='image image is-128x128'>
+            <figure className='image is-128x128'>
               <img
                 alt=''
                 className='is-rounded'
@@ -17,9 +17,9 @@ function Profile (props) {
             </figure>
           </div>
           <div className='column has-text-grey-light has-text-right-tablet'>
-            <p className='has-text-weight-light'>{props.profile.city}</p>
-            <p className='has-text-weight-light'>{props.profile.phone}</p>
-            <p className='has-text-weight-light'>{props.profile.mail}</p>
+            <p className='has-text-weight-light has-text-white'>{props.profile.city}</p>
+            <p className='has-text-weight-light'><a className="has-text-white" href={'tel:' + props.profile.phone}>{props.profile.phone}</a></p>
+            <p className='has-text-weight-light'><a className="has-text-white" href={'mailto:' + props.profile.mail}>{props.profile.mail}</a></p>
 
             <div className='social-icon'>
               <a

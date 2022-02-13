@@ -1,11 +1,11 @@
 module.exports = {
   profile: {
     name: 'Raúl Novelo',
-    title: 'Software Developer',
-    photo: 'photo.jpg', // 300x300px
+    title: 'Software Engineer',
+    photo: 'photo2.jpg', // 300x300px
     city: 'MID, Yucatán, México',
     phone: '(+52) 999-9090-601',
-    mail: 'raul.novelo@aaaimx.org'
+    mail: 'raul.novelo@lighthousetech.io'
   },
   social: {
     facebook: {
@@ -27,17 +27,37 @@ module.exports = {
   },
   experiences: [
     {
+      company: 'Lighthouse Technologies',
+      location: 'Mérida, MX',
+      title: 'Backend Engineer',
+      period: 'ENE 2022 - PRESENT',
+      jobdesc: [
+        'Coordinating with development teams to determine application requirements.',
+        'Writing scalable code using Python programming language.',
+        'Testing and debugging applications.',
+        'Developing back-end components.',
+        'Integrating user-facing elements using server-side logic.'
+      ]
+    },
+    {
+      company: 'ParamQ',
+      location: 'Mérida, MX',
+      title: 'Freelancer',
+      period: 'JAN 2021 - DEC 2021',
+      jobdesc: ['FullStack Developer using Django and Nuxt.js.']
+    },
+    {
       company: 'AAAIMX',
       location: 'Mérida, MX',
       title: 'President & Software Division Leader',
       period: 'APR 2019 - PRESENT',
       jobdesc: [
-        'Founder and mentor of Student Chapter members',
-        'Project leader and FrontEnd developer',
-        'Design and maintenance oficial website and admin',
-        'Implementing microservices and REST architecture',
-        'Speaker, teacher and advisor in projects for DSC',
-        'Co-author in technical articles and publications'
+        'Founder and mentor of Student Chapter members.',
+        'Project leader and FrontEnd developer.',
+        'Design and maintenance oficial website and admin.',
+        'Implementing microservices and REST architecture.',
+        'Speaker, teacher and advisor in projects for DSC.',
+        'Co-author in technical articles and publications.'
       ]
     },
     {
@@ -46,8 +66,8 @@ module.exports = {
       title: 'Python Developer',
       period: 'JAN 2019 - JUL 2019',
       jobdesc: [
-        'Development of Boat Rental plataform with Django REST Framework, PostgreSQL, NGINX, Celery and RabbitMQ',
-        'Maintenance, email service and admin dashboard'
+        'Development of Boat Rental plataform with Django REST Framework, PostgreSQL, NGINX, Celery and RabbitMQ.',
+        'Maintenance, email service and admin dashboard.'
       ]
     },
     {
@@ -55,7 +75,7 @@ module.exports = {
       location: 'Mérida, MX',
       title: 'Voluntary',
       period: 'JAN 2018 - APR 2020',
-      jobdesc: ['FrontEnd coach (Vue.js/Vuex ']
+      jobdesc: ['FrontEnd coach (Vue.js/Vuex.']
     }
   ],
   educations: [
@@ -63,7 +83,7 @@ module.exports = {
       name: 'Instituto Tecnológico de Mérida',
       city: 'TecNM',
       degree: 'Bachelor Degree',
-      period: 'AUG 2017 - PRESENT',
+      period: 'AUG 2017 - DEC 2021',
       faculty: 'Computer Systems Engineering'
     },
     {
@@ -91,12 +111,6 @@ module.exports = {
     }
   ],
   projects: [
-    {
-      title: 'Boat Rental Platform',
-      link: '#',
-      company: '2Gback',
-      period: 'JAN 2019 - AUG 2019'
-    },
     {
       title: 'Jarkol Website',
       link: 'http://www.jarkol.com',
@@ -128,12 +142,6 @@ module.exports = {
       period: 'APR 2020'
     },
     {
-      title: 'Java Compiler',
-      link: 'https://github.com/rnovec/java-compiler',
-      company: 'ITM/TecNM',
-      period: 'AUG 2020'
-    },
-    {
       title: 'React Native Apps',
       link: 'https://expo.io/@rnovec98/projects',
       company: 'Personal',
@@ -144,6 +152,18 @@ module.exports = {
       link: 'https://github.com/wolfcodesquad/digital-window',
       company: 'Servicios Escolares ITM',
       period: 'DEC 2020'
+    },
+    {
+      title: 'Go Agent',
+      link: 'https://go-agent.com',
+      company: 'ParamQ',
+      period: 'JAN 2021'
+    },
+    {
+      title: 'PayQ',
+      link: 'https://payq.paramq.com',
+      company: 'ParamQ',
+      period: 'JUL 2021'
     }
   ],
   skills: [
@@ -151,7 +171,7 @@ module.exports = {
       name: 'HTML5/CSS3',
       progress: 90
     },
-     {
+    {
       name: 'Javascript',
       progress: 90
     },
